@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Sonar">
+  <circle cx="16" cy="16" r="11" fill="none" stroke="#4BEF8F" stroke-width="2" opacity="0.55"/>
+  <circle cx="16" cy="16" r="7" fill="none" stroke="#4BEF8F" stroke-width="2.25" opacity="0.85"/>
+  <circle cx="16" cy="16" r="3.5" fill="#4BEF8F"/>
+</svg>

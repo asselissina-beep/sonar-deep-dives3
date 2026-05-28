@@ -1,0 +1,1 @@
+ALTER TABLE public.game_config ADD COLUMN show_footer_text boolean NOT NULL DEFAULT true;

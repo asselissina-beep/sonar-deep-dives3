@@ -1,0 +1,1 @@
+CREATE POLICY "Anyone can update config" ON public.game_config FOR UPDATE TO public USING (true) WITH CHECK (true);

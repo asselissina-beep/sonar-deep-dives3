@@ -1,0 +1,22 @@
+{
+  "name": "ABYSSAL",
+  "short_name": "ABYSSAL",
+  "description": "Pilot the ORCA-7 drone with next-gen sonar sensors",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#020617",
+  "theme_color": "#06b6d4",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

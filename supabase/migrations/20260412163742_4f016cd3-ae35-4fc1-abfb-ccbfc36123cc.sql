@@ -1,0 +1,1 @@
+ALTER TABLE public.game_config ADD COLUMN footer_text text NOT NULL DEFAULT 'SONAR FIELD TEST v2.1 // VISIT OUR BOOTH';

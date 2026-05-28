@@ -1,0 +1,32 @@
+# Template for Cloudflare "Deploy to Cloudflare" button and local `wrangler dev`.
+# https://developers.cloudflare.com/workers/platform/deploy-buttons/
+#
+# Copy to `.dev.vars` for local development (never commit `.dev.vars`).
+# During one-click deploy, Cloudflare prompts for these values from this file.
+#
+# Get Supabase values: Dashboard → Project Settings → API
+# After first deploy, set VITE_APP_ORIGIN to your live Worker URL or custom domain, then redeploy.
+#
+# Database migrations are NOT run by the deploy button — run separately:
+#   supabase link --project-ref <ref> && supabase db push
+
+# --- Build-time (Vite) — embedded in the client bundle; required ---
+
+VITE_SUPABASE_URL=https://your-project-ref.supabase.co
+VITE_SUPABASE_PUBLISHABLE_KEY=your-anon-or-publishable-key
+VITE_APP_ORIGIN=https://your-worker-name.your-subdomain.workers.dev
+
+# --- Build-time (Vite) — optional ---
+
+# VITE_OG_IMAGE_URL=https://cdn.example.com/sonar-og.png
+# VITE_LOG_LEVEL=warn
+
+# --- Worker runtime — required (use same URL/anon key as VITE_* above) ---
+
+SUPABASE_URL=https://your-project-ref.supabase.co
+SUPABASE_PUBLISHABLE_KEY=your-anon-or-publishable-key
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+
+# --- Worker runtime — optional ---
+
+ADMIN_BOOTSTRAP_EMAILS=operator@yourcompany.com
